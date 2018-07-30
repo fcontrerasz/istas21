@@ -8730,3 +8730,8 @@ width: 600px;
 .tiny{
   font-size: 6px;
 }
+
+.img-center{
+	display: block;
+	margin: 0 auto;
+}
