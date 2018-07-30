@@ -1,0 +1,977 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css\estilo_admin.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/awesome-bootstrap-checkbox/1.0.1/awesome-bootstrap-checkbox.min.css" rel="stylesheet">
+  </head><body>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>SSO+ INSTAS</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="admin.html">Inicio</a>
+            </li>
+            <li>
+              <a href="comite.html">Mi Comité</a>
+            </li>
+            <li>
+              <a href="actas.html">Actas</a>
+            </li>
+            <li class="active">
+              <a href="#">Acuerdos</a>
+            </li>
+            <li>
+              <a href="calendario.html">Calendario</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section no-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Inicio</a>
+              </li>
+              <li>
+                <a href="#">Comité</a>
+              </li>
+              <li class="active">Editar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="white-bg section">
+      <div class="container white-bg">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="list-group">
+              <li class="list-group-item active">
+                <a data-toggle="tab" href="#tab-1" aria-expanded="true" class="inline"> Acuerdos</a>
+              </li>
+              <li class="list-group-item">
+                <a data-toggle="tab" href="#tab-2" aria-expanded="true"> Actividades</a>
+              </li>
+              <li class="list-group-item">
+                <a data-toggle="tab" href="#tab-3" aria-expanded="true"> Medios de Verificación</a>
+              </li>
+              <li class="list-group-item">
+                <a data-toggle="tab" href="#tab-4" aria-expanded="true"> Mutualidad</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 tab-content">
+            <div class="tab-pane active " id="tab-1">
+              <div class="ibox-content ibox-heading">
+                <h3>Acuerdos</h3>
+                <small>Listado de tareas levantadas inicialmente</small>
+              </div>
+              <form method="get" class="form-horizontal">
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">FECHA DE SENSIBILIZACION</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">10/8/2018</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">DOTACION</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">25 PERSONAS</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">TIPO DE CUESTIONARIO</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">DIGITAL
+                      <br>
+                    </p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">VERSION CUESTIONARIO</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">LARGA</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">FORMA DE CONFIDENCIALIDAD</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">BUZON</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">CARACTERIZACION</label>
+                  <div class="col-lg-10">
+                    <table class="table table-bordered">
+                      <tbody>
+                        <tr>
+                          <td class="active font-bold">EDAD</td>
+                          <td>Edad</td>
+                          <td class="active font-bold">SEXO</td>
+                          <td>Sexo</td>
+                        </tr>
+                        <tr>
+                          <td class="active font-bold">UNIDAD GEO</td>
+                          <td>Unidad</td>
+                          <td class="active font-bold">ESTAMENTO</td>
+                          <td>Estamento</td>
+                        </tr>
+                        <tr>
+                          <td class="active font-bold">UNIDAD TRABAJO</td>
+                          <td>Unidad</td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">REGISTRO DE PARTICIPACION</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">SI</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">FORMA DE TABULACION</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">MANUAL</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">RESPONSABLE</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">Juan Perez</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+              </form>
+            </div>
+            <div class="tab-pane" id="tab-4">
+              <div class="ibox-content ibox-heading">
+                <h3>Medidas Mutualidad</h3>
+                <small>Complete los datos requeridos.</small>
+              </div>
+              <form method="get" class="form-horizontal">
+                <div class="hr-line-dashed"></div>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>ACTIVIDAD</th>
+                      <th>PLAZO</th>
+                      <th>DIAS RESTANTES</th>
+                      <th>MEDIO DE VERIFICACION</th>
+                      <th>ESTADO</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>ACTIVIDAD 1</td>
+                      <td>1/5/2018</td>
+                      <td>20 DIAS</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="badge badge-info">VALIDADO</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>ACTIVIDAD 2</td>
+                      <td>1/5/2018</td>
+                      <td>20 DIAS</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="badge badge-info">VALIDADO</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>ACTIVIDAD 3</td>
+                      <td>15/6/2018</td>
+                      <td>10 DIAS</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="badge badge-danger">PENDIENTE</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>ACTIVIDAD 4</td>
+                      <td>21/6/2018</td>
+                      <td>7 DIAS</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="badge badge-danger">PENDIENTE</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>ACTIVIDAD 5</td>
+                      <td>4/9/2018</td>
+                      <td>47 DIAS</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="badge badge-danger">PENDIENTE</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>ACTIVIDAD 6</td>
+                      <td>11/10/2018</td>
+                      <td>60 DIAS</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>
+                        </div>
+                      </td>
+                      <td>
+                        <span class="badge badge-danger">PENDIENTE</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <div class="col-sm-4 col-sm-offset-2">
+                    <button class="btn btn-white" type="submit">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">Guardar cambios</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane" id="tab-3">
+              <div class="ibox-content ibox-heading">
+                <h3>Medios de Verificación</h3>
+                <small>Complete los datos requeridos.</small>
+              </div>
+              <form method="get" class="form-horizontal">
+                <div class="hr-line-dashed"></div>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>&nbsp;</th>
+                      <th>ACTIVIDAD</th>
+                      <th>MEDIO DE VERIFICACION</th>
+                      <th>ESTADO</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td rowspan="2">CAMPAÑA</td>
+                      <td>REGISTRO DE ASISTENCIA</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>                        </div>                      </td>
+                      <td>
+                        <span class="badge badge-info">VALIDADO</span>                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>MATERIAL UTILIZADO</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>                        </div>                      </td>
+                      <td>
+                        <span class="badge badge-info">VALIDADO</span>                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td rowspan="2">APLICACION ENCUESTA</td>
+                      <td>REGISTRO DE FIRMAS</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>                        </div>                      </td>
+                      <td>
+                        <span class="badge badge-danger">PENDIENTE</span>                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>ENCUESTAS RESPONDIDAS</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>                        </div>                      </td>
+                      <td>
+                        <span class="badge badge-danger">PENDIENTE</span>                      </td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>TABULACION</td>
+                      <td>TABULACION EXCEL</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>                        </div>                      </td>
+                      <td>
+                        <span class="badge badge-danger">PENDIENTE</span>                      </td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>RESULTADOS MUTUAL</td>
+                      <td>CERTIFICADO ACHS</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>                        </div>                      </td>
+                      <td>
+                        <span class="badge badge-danger">PENDIENTE</span>                      </td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td rowspan="2">DIFUSION RESULTADOS</td>
+                      <td>REGISTRO ASISTENCIA</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>                        </div>                      </td>
+                      <td>
+                        <span class="badge badge-danger">PENDIENTE</span>                      </td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>MATERIAL</td>
+                      <td>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                          <span class="btn btn-default btn-file btn-xs">
+                            <span class="fileinput-new">Seleccione</span>
+                            <span class="fileinput-exists">Cambiar</span>
+                            <input type="file" name="...">
+                          </span>
+                          <span class="fileinput-filename"></span>
+                          <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">×</a>                        </div>                      </td>
+                      <td>
+                        <span class="badge badge-danger">PENDIENTE</span>                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <div class="col-sm-4 col-sm-offset-2">
+                    <button class="btn btn-white" type="submit">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">Guardar cambios</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane" id="tab-2">
+              <div class="ibox-content ibox-heading">
+                <h3>Actividades</h3>
+                <small>Planificación de las actividades</small>
+              </div>
+              <form method="get" class="form-horizontal">
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <div class="col-lg-12">
+                    <table></table>
+                    <table class="table table-bordered">
+                      <tbody>
+                        <tr>
+                          <td rowspan="2">ACTIVIDADES</td>
+                          <td colspan="5">MES:
+                            <select class="form-control m-b" name="account">
+                              <option>enero</option>
+                              <option>febrero</option>
+                              <option>marzo</option>
+                              <option>abril</option>
+                            </select>
+                          </td>
+                          <td colspan="5">MES:
+                            <select class="form-control m-b" name="account">
+                              <option>enero</option>
+                              <option>febrero</option>
+                              <option>marzo</option>
+                              <option>abril</option>
+                            </select>
+                          </td>
+                          <td colspan="5">MES:
+                            <select class="form-control m-b" name="account">
+                              <option>enero</option>
+                              <option>febrero</option>
+                              <option>marzo</option>
+                              <option>abril</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Sem
+                            <br>1</td>
+                          <td>Sem
+                            <br>2</td>
+                          <td>Sem
+                            <br>3</td>
+                          <td>Sem
+                            <br>4</td>
+                          <td>Sem
+                            <br>5</td>
+                          <td>Sem
+                            <br>1</td>
+                          <td>Sem
+                            <br>2</td>
+                          <td>Sem
+                            <br>3</td>
+                          <td>Sem
+                            <br>4</td>
+                          <td>Sem
+                            <br>5</td>
+                          <td>Sem
+                            <br>1</td>
+                          <td>Sem
+                            <br>2</td>
+                          <td>Sem
+                            <br>3</td>
+                          <td>Sem
+                            <br>4</td>
+                          <td>Sem
+                            <br>5</td>
+                        </tr>
+                        <tr>
+                          <td>Campaña de sensibilización</td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input type="radio" id="radioA1" class="form-check-input" value="semA1" name="radio0">
+                              <label class="form-check-label" for="radioA1"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA2" type="radio" name="radio0" value="semA2" checked="">
+                              <label class="form-check-label" for="radioA2"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA3" type="radio" name="radio0" value="semA3">
+                              <label class="form-check-label" for="radioA3"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA4" type="radio" name="radio0" value="semA4">
+                              <label class="form-check-label" for="radioA4"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA5" type="radio" name="radio0" value="semA5">
+                              <label class="form-check-label" for="radioA5"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA6" type="radio" name="radio0" value="semA6">
+                              <label class="form-check-label" for="radioA6"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA7" type="radio" name="radio0" value="semA7">
+                              <label class="form-check-label" for="radioA7"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA8" type="radio" name="radio0" value="semA8">
+                              <label class="form-check-label" for="radioA8"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA9" type="radio" name="radio0" value="semA9">
+                              <label class="form-check-label" for="radioA9"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA10" type="radio" name="radio0" value="semA10">
+                              <label class="form-check-label" for="radioA10"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA11" type="radio" name="radio0" value="semA11">
+                              <label class="form-check-label" for="radioA11"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA12" type="radio" name="radio0" value="semA12">
+                              <label class="form-check-label" for="radioA12"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA13" type="radio" name="radio0" value="semA13">
+                              <label class="form-check-label" for="radioA13"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA14" type="radio" name="radio0" value="semA14">
+                              <label class="form-check-label" for="radioA14"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" id="radioA15" type="radio" name="radio0" value="semA15">
+                              <label class="form-check-label" for="radioA15"></label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Aplicación de las encuestas</td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input type="radio" id="radio1" class="form-check-input" value="sem1" name="radio1">
+                              <label class="form-check-label" for="radio1"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio2" value="sem2" checked="">
+                              <label class="form-check-label" for="radio2"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio3" value="sem3">
+                              <label class="form-check-label" for="radio3"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio4" value="sem4">
+                              <label class="form-check-label" for="radio4"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio5" value="sem5">
+                              <label class="form-check-label" for="radio5"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio6" value="sem6">
+                              <label class="form-check-label" for="radio6"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio7" value="sem7">
+                              <label class="form-check-label" for="radio7"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio8" value="sem8">
+                              <label class="form-check-label" for="radio8"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio9" value="sem9">
+                              <label class="form-check-label" for="radio9"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio10" value="sem10">
+                              <label class="form-check-label" for="radio10"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio11" value="sem11">
+                              <label class="form-check-label" for="radio11"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio12" value="sem12">
+                              <label class="form-check-label" for="radio12"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio13" value="sem13">
+                              <label class="form-check-label" for="radio13"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio14" value="sem14">
+                              <label class="form-check-label" for="radio14"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio1" id="radio15" value="sem15">
+                              <label class="form-check-label" for="radio15"></label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tabulación de las encuestas</td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input type="radio" id="radioB1" class="form-check-input" value="semB1" name="radio2">
+                              <label class="form-check-label" for="radioB1"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB2" value="semB2" checked="">
+                              <label class="form-check-label" for="radioB2"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB3" value="semB3">
+                              <label class="form-check-label" for="radioB3"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB4" value="semB4">
+                              <label class="form-check-label" for="radioB4"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB5" value="semB5">
+                              <label class="form-check-label" for="radioB5"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB6" value="semB6">
+                              <label class="form-check-label" for="radioB6"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB7" value="semB7">
+                              <label class="form-check-label" for="radioB7"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB8" value="semB8">
+                              <label class="form-check-label" for="radioB8"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB9" value="semB9">
+                              <label class="form-check-label" for="radioB9"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB10" value="semB10">
+                              <label class="form-check-label" for="radioB10"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB11" value="semB11">
+                              <label class="form-check-label" for="radioB11"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB12" value="semB12">
+                              <label class="form-check-label" for="radioB12"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB13" value="semB13">
+                              <label class="form-check-label" for="radioB13"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB14" value="semB14">
+                              <label class="form-check-label" for="radioB14"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio2" id="radioB15" value="semB15">
+                              <label class="form-check-label" for="radioB15"></label>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Difusión resultados</td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input type="radio" id="radioC1" class="form-check-input" value="semC1" name="radio3">
+                              <label class="form-check-label" for="radioC1"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC2" value="semC2" checked="">
+                              <label class="form-check-label" for="radioC2"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC3" value="semC3">
+                              <label class="form-check-label" for="radioC3"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC4" value="semC4">
+                              <label class="form-check-label" for="radioC4"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC5" value="semC5">
+                              <label class="form-check-label" for="radioC5"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC6" value="semC6">
+                              <label class="form-check-label" for="radioC6"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC7" value="semC7">
+                              <label class="form-check-label" for="radioC7"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC8" value="semC8">
+                              <label class="form-check-label" for="radioC8"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC9" value="semC9">
+                              <label class="form-check-label" for="radioC9"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC10" value="semC10">
+                              <label class="form-check-label" for="radioC10"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC11" value="semC11">
+                              <label class="form-check-label" for="radioC11"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC12" value="semC12">
+                              <label class="form-check-label" for="radioC12"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC13" value="semC13">
+                              <label class="form-check-label" for="radioC13"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC14" value="semC14">
+                              <label class="form-check-label" for="radioC14"></label>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="form-check abc-radio">
+                              <input class="form-check-input" type="radio" name="radio3" id="radioC15" value="semC15">
+                              <label class="form-check-label" for="radioC15"></label>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <button class="btn btn-white" type="submit">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">Guardar y generar acta en PDF</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Footer header</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              <br>Ut enim ad minim veniam, quis nostrud</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-right">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>

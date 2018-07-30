@@ -1,0 +1,460 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css\estilo_admin.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+  </head><body>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>SSO+ ISTAS 21</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="admin.html">Inicio</a>
+            </li>
+            <li class="active">
+              <a href="comite.html">Mi Comité</a>
+            </li>
+            <li>
+              <a href="actas.html">Actas</a>
+            </li>
+            <li>
+              <a href="#">Acuerdos</a>
+            </li>
+            <li>
+              <a href="calendario.html">Calendario</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="section no-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Inicio</a>
+              </li>
+              <li>
+                <a href="#">Comité</a>
+              </li>
+              <li class="active">Editar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="white-bg section">
+      <div class="container white-bg">
+        <div class="row">
+          <div class="col-md-3">
+            <ul class="list-group">
+              <li class="list-group-item active">
+                <a data-toggle="tab" href="#tab-1" aria-expanded="true" class=""> Datos de Acceso</a>
+              </li>
+              <li class="list-group-item">
+                <a data-toggle="tab" href="#tab-2" aria-expanded="true" class=""> Comité</a>
+              </li>
+              <li class="list-group-item">
+                <a data-toggle="tab" href="#tab-3" aria-expanded="true" class=""> Actualizar Comité</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-9 tab-content">
+            <div class="tab-pane active" id="tab-1">
+              <div class="ibox-content ibox-heading">
+                <h3>Datos de Acceso</h3>
+                <small>Actualice aquí los datos de la cuenta.</small>
+              </div>
+              <form method="get" class="form-horizontal">
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">NOMBRE DE USUARIO</label>
+                  <div class="col-sm-10">
+                    <div class="row">
+                      <div class="col-md-6 ">
+                        <input type="text" class="form-control" _vkenabled="true" _originaltype="text" autocomplete="off">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">CORREO</label>
+                  <div class="col-sm-10">
+                    <div class="row">
+                      <div class="col-md-6 ">
+                        <input type="text" class="form-control" _vkenabled="true" _originaltype="text" autocomplete="off">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">NUEVA CONSTRASEÑA</label>
+                  <div class="col-sm-10">
+                    <div class="row">
+                      <div class="col-md-6 ">
+                        <input type="text" class="form-control" _vkenabled="true" _originaltype="text" autocomplete="off">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <div class="col-sm-4 col-sm-offset-2">
+                    <button class="btn btn-white" type="submit">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">Guardar cambios</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane " id="tab-2">
+              <div class="ibox-content ibox-heading">
+                <h3>Información del comité</h3>
+                <small>Ingrese los datos de la cuenta.</small>
+              </div>
+              <form method="get" class="form-horizontal">
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">NOMBRE DEL COMITE</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">Comité Los Trapenses</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">RECINTO(S) ASOCIADO(S)</label>
+                  <div class="col-sm-10">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nombre Recinto</th>
+                          <th>Dirección</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">INTEGRANTES ACTIVOS</label>
+                  <div class="col-sm-10">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nombres</th>
+                          <th>Apellidos</th>
+                          <th>Correo</th>
+                          <th>Cargo</th>
+                          <th>Perfil</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Juan</td>
+                          <td>Perez Román</td>
+                          <td>jperez@aguasandinas.cl</td>
+                          <td>Gerente</td>
+                          <td>
+                            <span class="label label-primary">RE</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>María</td>
+                          <td>Jara Pilar</td>
+                          <td>mjara@aguasandinas.cl</td>
+                          <td>Jefe</td>
+                          <td>
+                            <span class="label label-primary">RE</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Carlos</td>
+                          <td>Rodríguez Meza</td>
+                          <td>crodrig22@aguasandinas.cl</td>
+                          <td>Sindicato</td>
+                          <td>
+                            <span class="label label-warning">RT</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Natalia</td>
+                          <td>Carrera Mondaca</td>
+                          <td>ncarreram@aguasandinas.cl</td>
+                          <td>CPHS</td>
+                          <td>
+                            <span class="label label-warning">RT</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span class="help-block m-b-none">Ultima fecha de actualización:
+                      <strong>19/6/2018</strong>.</span>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">FILIAL</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">Nombre filial</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">N° DOTACION</label>
+                  <div class="col-sm-10">
+                    <div class="row">
+                      <div class="col-md-3 ">
+                        <p class="form-control-static">25 personas</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">DIRECCION</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">DIRECCION DE RESILIENCIA</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">SITIO WEB SUCESO</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">http://www.suceso.cl/id=1</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">RESPONSABLE ACHS</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">Felipe González</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-lg-2 control-label">CORREO ACHS</label>
+                  <div class="col-lg-10">
+                    <p class="form-control-static">fgonzalez@achs.cl</p>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <div class="col-sm-4 col-sm-offset-2">
+                    <button class="btn btn-white" type="submit">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">Guardar cambios</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane  " id="tab-3">
+              <div class="ibox-content ibox-heading">
+                <h3>Editar datos del comité</h3>
+                <small>Ingrese los datos de la cuenta.</small>
+              </div>
+              <form method="get" class="form-horizontal">
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">INTEGRANTES ACTIVOS</label>
+                  <div class="col-sm-10">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Nombres</th>
+                          <th>Apellidos</th>
+                          <th>Correo</th>
+                          <th>Cargo</th>
+                          <th>Perfil</th>
+                          <th>Acción</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Juan</td>
+                          <td>Perez Román</td>
+                          <td>jperez@aguasandinas.cl</td>
+                          <td>Gerente</td>
+                          <td>
+                            <span class="label label-primary">RE</span>
+                          </td>
+                          <td>
+                            <i class="fa fa-wrench"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>María</td>
+                          <td>Jara Pilar</td>
+                          <td>mjara@aguasandinas.cl</td>
+                          <td>Jefe</td>
+                          <td>
+                            <span class="label label-primary">RE</span>
+                          </td>
+                          <td>
+                            <i class="fa fa-wrench"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Carlos</td>
+                          <td>Rodríguez Meza</td>
+                          <td>crodrig22@aguasandinas.cl</td>
+                          <td>Sindicato</td>
+                          <td>
+                            <span class="label label-warning">RT</span>
+                          </td>
+                          <td>
+                            <i class="fa fa-wrench"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Natalia</td>
+                          <td>Carrera Mondaca</td>
+                          <td>ncarreram@aguasandinas.cl</td>
+                          <td>CPHS</td>
+                          <td>
+                            <span class="label label-warning">RT</span>
+                          </td>
+                          <td>
+                            <i class="fa fa-wrench"></i>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <span class="help-block m-b-none">Ultima fecha de actualización:
+                      <strong>19/6/2018</strong>.</span>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">FILIAL</label>
+                  <div class="col-sm-10">
+                    <div class="row">
+                      <div class="col-md-6 ">
+                        <input type="text" class="form-control" _vkenabled="true" _originaltype="text" autocomplete="off">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">N° DOTACION</label>
+                  <div class="col-sm-10">
+                    <div class="row">
+                      <div class="col-md-3 ">
+                        <div class="input-group bootstrap-touchspin">
+                          <span class="input-group-btn">
+                            <button class="btn btn-white bootstrap-touchspin-down" type="button">-</button>
+                          </span>
+                          <span class="input-group-addon bootstrap-touchspin-prefix" style="display: none;"></span>
+                          <input class="touchspin1 form-control" type="text" value="" name="demo1" style="display: block;" _vkenabled="true" _originaltype="text">
+                          <span class="input-group-addon bootstrap-touchspin-postfix" style="display: none;"></span>
+                          <span class="input-group-btn">
+                            <button class="btn btn-white bootstrap-touchspin-up" type="button">+</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <label class="col-sm-2 control-label">DIRECCION</label>
+                  <div class="col-sm-10">
+                    <div class="row">
+                      <div class="col-md-6 ">
+                        <select class="form-control m-b" name="account">
+                          <option>Dirección 1</option>
+                          <option>Dirección 2</option>
+                          <option>Dirección 3</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <button class="btn btn-white" type="submit">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">Guardar y generar acta en PDF</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Footer header</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              <br>Ut enim ad minim veniam, quis nostrud</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-right">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>

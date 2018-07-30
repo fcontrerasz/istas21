@@ -1,0 +1,199 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css\estilo_admin.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+  </head><body>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span>SSO+ INSTAS</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="admin.html">Inicio</a>
+            </li>
+            <li>
+              <a href="comite.html">Mi Comité</a>
+            </li>
+            <li class="active">
+              <a href="actas.html">Actas</a>
+            </li>
+            <li>
+              <a href="acuerdos.html">Acuerdos</a>
+            </li>
+            <li>
+              <a href="calendario.html">Calendario</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="white-bg section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="ibox-content ibox-heading">
+              <h3>Registro de Actas</h3>
+              <small>Revise y actualice aquí los actas.</small>
+            </div>
+            <form method="get" class="form-horizontal">
+              <div class="hr-line-dashed"></div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">SUBIR ACTA</label>
+                <div class="col-sm-10">
+                  <div class="row">
+                    <div class="col-md-6 ">
+                      <div class="fileinput fileinput-new input-group" data-provides="fileinput">
+                        <div class="form-control" data-trigger="fileinput">
+                          <i class="glyphicon glyphicon-file fileinput-exists"></i>
+                          <span class="fileinput-filename"></span>
+                        </div>
+                        <span class="input-group-addon btn btn-default btn-file">
+                          <span class="fileinput-new">Seleccionar</span>
+                          <span class="fileinput-exists">Cambiar</span>
+                          <input type="hidden">
+                          <input type="file" name="...">
+                        </span>
+                        <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Quitar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="hr-line-dashed"></div>
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Archivo</th>
+                    <th>Tipo</th>
+                    <th>Tamaño</th>
+                    <th>Fecha</th>
+                    <th>Acción</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Archivo_1.pdf</td>
+                    <td>
+                      <span class="label label-info">acta de Comité</span>
+                    </td>
+                    <td>10 MB</td>
+                    <td>1/2/2018</td>
+                    <td>
+                      <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-download"></i>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Archivo_2.pdf</td>
+                    <td>
+                      <span class="label label-info">acta de Comité</span>
+                    </td>
+                    <td>15 MB</td>
+                    <td>7/6/2018</td>
+                    <td>
+                      <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-download"></i>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Archivo_3.pdf</td>
+                    <td>
+                      <span class="label label-info">acta de Comité</span>
+                    </td>
+                    <td>12 MB</td>
+                    <td>18/7/2018</td>
+                    <td>
+                      <span class="label label-warning">Pendiente de VB</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Archivo_4.pdf</td>
+                    <td>
+                      <span class="label label-primary">acta de Acuerdos</span>
+                    </td>
+                    <td>12 MB</td>
+                    <td>18/7/2018</td>
+                    <td>
+                      <a class="btn btn-white btn-bitbucket">
+                            <i class="fa fa-download"></i>
+                        </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Archivo_5.pdf</td>
+                    <td>
+                      <span class="label label-primary">acta de Acuerdos</span>
+                    </td>
+                    <td>12 MB</td>
+                    <td>18/7/2018</td>
+                    <td>
+                      <span class="label label-warning">Pendiente de VB</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="hr-line-dashed"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section section-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h1>Footer header</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+              <br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+              <br>Ut enim ad minim veniam, quis nostrud</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="text-info text-right">
+              <br>
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12 hidden-lg hidden-md hidden-sm text-left">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 hidden-xs text-right">
+                <a href="#"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github text-inverse"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+
+</body></html>
